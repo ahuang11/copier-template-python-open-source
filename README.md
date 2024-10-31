@@ -6,7 +6,7 @@ For documentation on pixi see [here](https://pixi.sh).
 ## Usage
 
 ```bash
-pixi exec --spec copier --spec ruamel.yaml -- copier copy --trust https://github.com/ahuang11/copier-template-python-open-source <destination-path>
+pixi exec --spec copier --spec ruamel.yaml -- copier copy --trust https://github.com/ahuang11/copier-template-python-open-source <panel-extension-name>
 ```
 
 To update to a newer template version:

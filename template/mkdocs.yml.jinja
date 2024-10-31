@@ -7,8 +7,7 @@ repo_name: {{ github_user }}/{{ project_slug }}
 
 theme:
     name: material
-    custom_dir: 'overrides'
-    logo: 'assets/images/panel-logo.png'
+    logo: 'assets/logo.svg'
     features:
         - content.copy.code
     palette:
@@ -47,8 +46,6 @@ plugins:
     - mkdocstrings:
         handlers:
             python:
-                import:
-                    - https://docs.python.org/{{ minimal_python_version.replace('py', '') }}/objects.inv
                 options:
                     docstring_style: google
 
@@ -58,3 +55,4 @@ watch:
 nav:
     - Home: index.md
     - Reference:
+        - {{ project_slug }}: reference/{{ project_slug }}.md

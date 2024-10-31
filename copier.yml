@@ -48,6 +48,11 @@ github_url:
     The GitHub URL should start with `https://github.com/` and not end with `.git`, for example `https://github.com/LandoCalrissian/python-project`.
     {% endif %}
 
+docs_url:
+  type: str
+  help: What is the URL of the documentation of this project?
+  default: "https://{{ github_user }}.github.io/{{ project_slug }}/"
+
 minimal_python_version:
   type: str
   help: What is the minimal Python version you want to support?
