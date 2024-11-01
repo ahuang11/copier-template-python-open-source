@@ -33,45 +33,13 @@ pixi exec --spec copier --spec ruamel.yaml -- copier update --defaults --trust
 Note: `copier` will show `Conflict` for files with manual changes during an update—this is normal. As long as there are no merge conflict markers, all patches applied cleanly.
 
 ## Setup
-
-After pushing to GitHub:
-
-1. Set up `.pypirc` locally thru https://pypi.org/manage/account/
-
-<img width="813" alt="image" src="https://github.com/ahuang11/cookiecutter-hipster-pypackage/assets/15331990/47bd9aa0-8faa-45a8-8024-060ad19237ff">
-
-```
-[distutils]
-index-servers =
-    pypi
-
-[pypi]
-  username = __token__
-  password = pypi-abcdefghij...
-```
-
-2. Then push `v0.0.0`
-
-```
-pixi run -e build build-wheel
-twine upload dist/*
-```
-
 ---
 
-3. Create another API token for the project thru https://pypi.org/manage/account/
-
-<img width="382" alt="image" src="https://github.com/ahuang11/cookiecutter-hipster-pypackage/assets/15331990/9b9d2162-9cdf-4bae-8a22-6ee9789a537a">
-
-4. Set up `PYPI_API_TOKEN` in settings > secrets > actions
-
-<img width="1215" alt="image" src="https://github.com/ahuang11/cookiecutter-hipster-pypackage/assets/15331990/7328fc80-4613-40d8-99a3-15af830d2bec">
-
-5. Enable GitHub Pages in settings > pages
+1. Enable GitHub Pages in settings > pages
 
 <img width="801" alt="image" src="https://github.com/ahuang11/cookiecutter-hipster-pypackage/assets/15331990/accd33a5-dc64-4df1-a009-07a3eed0bc38">
 
-6. Now you can release to PyPi by making a tag!
+2. Release to PyPi by making a tag!
 
 <img width="1169" alt="image" src="https://github.com/ahuang11/cookiecutter-hipster-pypackage/assets/15331990/7820461a-d559-4018-b50c-c77a612cb81d">
 
