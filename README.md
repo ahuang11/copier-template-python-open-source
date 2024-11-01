@@ -35,11 +35,15 @@ Note: `copier` will show `Conflict` for files with manual changes during an upda
 ## Setup
 ---
 
-1. Enable GitHub Pages in settings > pages
+1. Enable GitHub Pages through Settings > Pages on the GitHub toolbar:
 
 <img width="801" alt="image" src="https://github.com/ahuang11/cookiecutter-hipster-pypackage/assets/15331990/accd33a5-dc64-4df1-a009-07a3eed0bc38">
 
-2. Release to PyPi by making a tag!
+2. Head over to https://pypi.org/manage/account/publishing and fill out the form:
+
+<img width="813" alt="image" src="https://github.com/user-attachments/assets/8f3a5aad-1394-4d74-a4fc-cbefb18777ff">
+
+3. Now, you can release to PyPi by making a tag!
 
 <img width="1169" alt="image" src="https://github.com/ahuang11/cookiecutter-hipster-pypackage/assets/15331990/7820461a-d559-4018-b50c-c77a612cb81d">
 
