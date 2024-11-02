@@ -29,7 +29,7 @@ project_short_description:
 github_user:
   type: str
   help: What is your GitHub username (used for CODEOWNERS)?
-  placeholder: holoviz
+  placeholder: panel-extensions
 
 author_name:
   type: str
