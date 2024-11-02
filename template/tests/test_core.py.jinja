@@ -1,6 +1,5 @@
-def test_hard():
-    import {{ project_slug_snake_case }}  # noqa
+import {{ project_slug_snake_case }}  # noqa
 
-    # this is just a demo that pytest can produce good error messages just by
-    # parsing assert statements
-    assert {"a": 1, "b": 2} == {"a": 1, "b": 2}
+
+def test_example():
+    assert {{ project_slug_snake_case }}

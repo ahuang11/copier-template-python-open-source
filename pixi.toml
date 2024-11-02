@@ -31,9 +31,24 @@ prettier = "*"
 taplo = "*"
 pre-commit-hooks = "*"
 typos = "*"
+
 [feature.lint.tasks]
 pre-commit-install = "pre-commit install"
 pre-commit-run = "pre-commit run -a"
+
+[feature.test-ui]
+channels = ["microsoft"]
+
+[feature.test-ui.dependencies]
+playwright = { version = "*", channel = "microsoft" }
+pytest-playwright = { version = "*", channel = "microsoft" }
+
+[feature.test-ui.tasks]
+_install-ui = 'playwright install chromium'
+
+[feature.test-ui.tasks.test-ui]
+cmd = 'pytest tests/ui --ui --browser chromium'
+depends_on = ["_install-ui"]
 
 [environments]
 default = []
